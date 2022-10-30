@@ -104,6 +104,11 @@ namespace veri_yapıları_1
             {
                 Console.WriteLine("liste boş");
             }
+            else if ( head.next == null)
+            {
+                head = null;
+                Console.WriteLine("listede kalan son düğüm de silindi");
+            }
             else
             {
                 Node temp = head;                   // temp baştan başlayıp en sondaki düğüme kadar gidecek olan
@@ -128,32 +133,88 @@ namespace veri_yapıları_1
     {
         static void Main(string[] args)
         {
+            int sayi;
             List tekYonListe = new List();
 
-            tekYonListe.sonaEkle(10);
-            tekYonListe.sonaEkle(20);
-            tekYonListe.sonaEkle(30);
+            int secim = menu();
 
-            tekYonListe.yazdir();
-            Console.WriteLine();
+            while ( secim != 0)
+            {
+                switch ( secim)
+                {
+                    case 1:
+                        Console.Write("sayı : ");
+                        sayi = int.Parse(Console.ReadLine());
+                        tekYonListe.basaEkle(sayi);
+                        break;
 
-            tekYonListe.basaEkle(5);
-            tekYonListe.sonaEkle(100);
+                    case 2:
+                        Console.Write("sayı : ");
+                        sayi = int.Parse(Console.ReadLine());
+                        tekYonListe.sonaEkle(sayi);
+                        break;
 
-            tekYonListe.yazdir();
+                    case 3:
+                        tekYonListe.bastanSil();
+                        break;
 
-            Console.WriteLine();
+                    case 4:
+                        tekYonListe.sondanSil();
+                        break;
 
-            tekYonListe.bastanSil();
-            tekYonListe.bastanSil();
+                    case 0:
+                        break;
 
-            tekYonListe.yazdir();
-            Console.WriteLine();
+                    default:
+                        Console.WriteLine("hatalı seçim yaptınız");
+                        break;
+                }
 
-            tekYonListe.sondanSil();
-            tekYonListe.yazdir();
+                tekYonListe.yazdir();
+                Console.WriteLine();
+                secim = menu();
 
+            }
             Console.ReadKey();
+
+            //tekYonListe.sonaEkle(10);
+            //tekYonListe.sonaEkle(20);
+            //tekYonListe.sonaEkle(30);
+
+            //tekYonListe.yazdir();
+            //Console.WriteLine();
+
+            //tekYonListe.basaEkle(5);
+            //tekYonListe.sonaEkle(100);
+
+            //tekYonListe.yazdir();
+
+            //Console.WriteLine();
+
+            //tekYonListe.bastanSil();
+            //tekYonListe.bastanSil();
+
+            //tekYonListe.yazdir();
+            //Console.WriteLine();
+
+            //tekYonListe.sondanSil();
+            //tekYonListe.yazdir();
+
+            //Console.ReadKey();
+        }
+        private static int menu()
+        {
+            int secim;
+            Console.WriteLine("1 - başa ekle");
+            Console.WriteLine("2 - sona ekle");
+            Console.WriteLine("3 - baştan sil");
+            Console.WriteLine("4 - sondan sil");
+            Console.WriteLine("0 - programı kapat");
+            Console.Write("seçiminiz : ");
+            secim = int.Parse(Console.ReadLine());
+            return secim;
+
+
         }
     }
 }
