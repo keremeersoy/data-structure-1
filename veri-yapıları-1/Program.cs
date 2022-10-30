@@ -98,6 +98,31 @@ namespace veri_yapıları_1
             }
         }
 
+        public void sondanSil()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("liste boş");
+            }
+            else
+            {
+                Node temp = head;                   // temp baştan başlayıp en sondaki düğüme kadar gidecek olan
+                Node temp2 = temp;                  // temp2 ise sondan bi önceki düğümü tutmak için olan
+                
+                while( temp.next != null )          //en sondaki düğüme gelene kadar olan süreç bu while
+                {
+                    temp2 = temp;                   //temp önden gidiyor temp2 hep bi arkasındaki düğümü tutuyor
+                    temp = temp.next;               // temp ilerliyor
+                }
+
+                // whiledan çıktık yani temp şu an en son düğümde, temp2 ondan bi önceki düğümde
+
+                temp2.next = null;                  // temp2 (sondan bi önceki) düğümünün pointerını (nexti) null olarak aticaz ki en sondaki düğümle yani temple ilişkisi kesilsin
+                Console.WriteLine("sondaki düğüm silindi");
+            }
+
+        }
+
     }
     class Program
     {
@@ -110,6 +135,7 @@ namespace veri_yapıları_1
             tekYonListe.sonaEkle(30);
 
             tekYonListe.yazdir();
+            Console.WriteLine();
 
             tekYonListe.basaEkle(5);
             tekYonListe.sonaEkle(100);
@@ -122,7 +148,10 @@ namespace veri_yapıları_1
             tekYonListe.bastanSil();
 
             tekYonListe.yazdir();
+            Console.WriteLine();
 
+            tekYonListe.sondanSil();
+            tekYonListe.yazdir();
 
             Console.ReadKey();
         }
