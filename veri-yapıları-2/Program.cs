@@ -9,7 +9,8 @@ namespace veri_yapıları_2
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            // TEK YÖN LİSTELER
             Listemiz tydl = new Listemiz();
             int secim = menu();
             int sayi, indis;
