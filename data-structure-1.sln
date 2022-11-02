@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "veri-yapıları-1", "veri-y
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veri-yapıları-2", "veri-yapıları-2\veri-yapıları-2.csproj", "{F5D77FB1-4C7C-4B8C-831C-D96572FBCAB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veri-yapıları-3", "veri-yapıları-3\veri-yapıları-3.csproj", "{6F20EC81-E750-4CB7-889F-06CE0016D51C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "veri-yapıları-3", "veri-yapıları-3\veri-yapıları-3.csproj", "{6F20EC81-E750-4CB7-889F-06CE0016D51C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veri-yapıları-4", "veri-yapıları-4\veri-yapıları-4.csproj", "{DD0CF041-AD48-445C-9A74-483155C75B24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "veri-yapıları-4", "veri-yapıları-4\veri-yapıları-4.csproj", "{DD0CF041-AD48-445C-9A74-483155C75B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veri-yapıları-5", "veri-yapıları-5\veri-yapıları-5.csproj", "{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DD0CF041-AD48-445C-9A74-483155C75B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD0CF041-AD48-445C-9A74-483155C75B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD0CF041-AD48-445C-9A74-483155C75B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
