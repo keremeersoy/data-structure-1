@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "data-structure-1", "data-structure-1\data-structure-1.csproj", "{DC5842C4-D956-48A5-9827-080E66F25CB1}"
 EndProject
@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "veri-yapıları-3", "veri-y
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "veri-yapıları-4", "veri-yapıları-4\veri-yapıları-4.csproj", "{DD0CF041-AD48-445C-9A74-483155C75B24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veri-yapıları-5", "veri-yapıları-5\veri-yapıları-5.csproj", "{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "veri-yapıları-5", "veri-yapıları-5\veri-yapıları-5.csproj", "{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veri_yapilari_2023_vize_notlarii", "veri_yapilari_2023_vize_notlarii\veri_yapilari_2023_vize_notlarii.csproj", "{A07694AF-FB83-4D53-9EE0-6BF1A627E567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD9EEC71-1D8E-44A5-B08E-1926A63873CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07694AF-FB83-4D53-9EE0-6BF1A627E567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07694AF-FB83-4D53-9EE0-6BF1A627E567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07694AF-FB83-4D53-9EE0-6BF1A627E567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07694AF-FB83-4D53-9EE0-6BF1A627E567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

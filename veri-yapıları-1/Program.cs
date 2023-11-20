@@ -138,9 +138,9 @@ namespace veri_yapıları_1
 
             int secim = menu();
 
-            while ( secim != 0)
+            while ( secim != 0 )
             {
-                switch ( secim)
+                switch ( secim )
                 {
                     case 1:
                         Console.Write("sayı : ");
